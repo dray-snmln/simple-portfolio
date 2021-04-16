@@ -154,4 +154,4 @@ main {
 
 #s1 {align-items: flex-end;}
 #s2 {align-items: center; justify-content: center; flex-direction: column;}
-#s3 {justify-content: right;}
+#s3 {justify-content: flex-end;}
