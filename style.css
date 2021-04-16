@@ -21,20 +21,97 @@ nav {
     padding: 15px;
 }
 
-#hi {font-size: 3.5rem; margin-bottom: 0; color: mintcream;}
-#subtitle {font-size: 1.8rem; font-weight: 300; font-style: italic; color: aliceblue;}
+#hi {
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    color: mintcream;
+}
 
-#welcome-section {
-    font-family: Rubik;
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: italic;
+    color: aliceblue;
+}
+
+main {
     position: absolute;
+    font-family: Rubik;
     top: 50px;
     left: 0;
-    height: calc(100vh - 50px);
     width: 100%;
+    max-width: 100vw;
+    background-color: black;
     display: flex;
     flex-direction: column;
+}
+
+#welcome-section {
+    display: inherit;
+    flex-direction: inherit;
+    min-height: calc(100vh - 50px);
+    max-width: 100vw;
     align-items: center;
     justify-content: center;
-    background: rgb(28,84,138);
+    background: #0F0B5B;
     background: linear-gradient(90deg, rgb(18, 60, 100) 0%, rgb(5,46,85) 100%);
+}
+
+#project-title {
+    margin: 10% auto 100px;}
+
+#projects {
+    display: inherit;
+    flex-direction: inherit;
+    min-height: 100vh;
+    max-width: 100vw;
+    align-items: center;
+    background: rgb(8, 42, 73);
+}
+
+#tile-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#tags {display: inherit; flex-direction: row; justify-content: center;}
+#description {
+    display: inherit;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0 15px 15px;
+    font-family: Rubik;
+    color: white;
+}
+
+.tile {
+    display: flex;
+    padding: 20px;
+    margin: 25px;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 40%;
+    min-width: 450px;
+    border-radius: 6px;
+}
+
+img {
+    border-radius: 6px;
+    height: auto;
+    width: 25vw;
+    min-width: 500px;
+}
+
+.desc-title {font-size: 1.2rem; text-align: center;}
+
+.tag {
+    padding: 7px;
+    margin: 5px 5px 5px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgba(0, 1, 5, 0.40);
 }
