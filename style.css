@@ -47,7 +47,7 @@ main {
     flex-direction: column;
 }
 
-#welcome-section {
+#welcome-section { 
     display: inherit;
     flex-direction: inherit;
     min-height: 100vh;
