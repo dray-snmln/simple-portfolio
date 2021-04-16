@@ -1,10 +1,14 @@
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
+html {scroll-behavior: smooth;}
+body {margin: 0;}
 a {text-decoration: none; color: white;}
-a:hover {opacity: 69%; color: rgb(197, 178, 153); transition: .69s;}
+a:hover {color: rgb(197, 178, 153); transition: .69s;}
+
+
+::-webkit-scrollbar {width: 10px;}
+::-webkit-scrollbar-track {background: rgba(0, 0, 0, 0);}
+::-webkit-scrollbar-thumb {background: #888;}
+::-webkit-scrollbar-thumb:hover {background: #555;}
+
 
 nav {
     position: fixed;
@@ -14,6 +18,7 @@ nav {
     height: 50px;
     font-family: 'Rubik';
     background-color: #832A00;
+    transition: top 0.25s;
 }
 
 .links {
@@ -29,7 +34,8 @@ nav {
 }
 
 .subtitle {
-    font-size: 1.5rem;
+    padding: 0px 25px; 
+    font-size: 1.4rem;
     font-weight: 300;
     font-style: italic;
     color: aliceblue;
@@ -99,7 +105,7 @@ main {
     border-radius: 6px;
 }
 
-img {
+.project-img {
     border-radius: 6px;
     height: auto;
     width: 25vw;
@@ -109,10 +115,43 @@ img {
 .desc-title {font-size: 1.2rem; text-align: center;}
 
 .tag {
-    padding: 7px 10px;
-    margin: 5px 5px 5px 15px;
+    padding: 3px 8px;
+    margin: 5px;
+    font-family: Cambay;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 5px;
     background-color: rgba(0, 1, 5, 0.40);
 }
+
+#contact {
+    background-color: #C88B33;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials {
+    height: 200px;
+    width: 350px;
+    display: inherit;
+}
+
+.social-text {
+    color: black;
+    text-align: center;
+}
+
+.socials img {
+    height: auto;
+    opacity: 80%;
+}
+
+#linked {height: 77px;}
+#mail{height:99px;}
+
+#s1 {align-items: flex-end;}
+#s2 {align-items: center; justify-content: center; flex-direction: column;}
+#s3 {justify-content: right;}
