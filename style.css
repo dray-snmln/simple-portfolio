@@ -1,10 +1,13 @@
+* {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  overflow-x: hidden;
 }
 
 a {
@@ -73,7 +76,7 @@ nav {
 }
 
 #hi {
-  font-size: 4vw;
+  font-size: 3rem;
   margin-bottom: 0;
   color: mintcream;
 }
@@ -83,7 +86,7 @@ nav {
   padding: 0px 25px;
   font-weight: 300;
   font-style: italic;
-  font-size: 1.25vw;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -94,10 +97,6 @@ nav {
   .subtitle {
     font-size: 1.25rem;
     padding: 0px 15px;
-  }
-
-  img {
-    width: 70vw;
   }
 }
 
@@ -173,10 +172,6 @@ main {
   border-radius: 6px;
 }
 
-img {
-  max-width: 80vw;
-}
-
 .project-img {
   border-radius: 6px;
   height: auto;
@@ -202,16 +197,15 @@ img {
 #contact {
   background-color: #C88B33;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  justify-items: center;
   align-items: center;
-  justify-content: center;
 }
 
 .socials {
   height: 200px;
   width: 350px;
-  display: inherit;
+  display: grid;
 }
 
 .social-text {
@@ -230,18 +224,4 @@ img {
 
 #mail {
   height: 99px;
-}
-
-#s1 {
-  align-items: flex-end;
-}
-
-#s2 {
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-#s3 {
-  justify-content: flex-end;
 }
